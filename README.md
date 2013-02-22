@@ -1,0 +1,4 @@
+yiisandbox
+==========
+
+A Yii Sandbox
