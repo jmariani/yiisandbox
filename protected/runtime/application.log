@@ -1,0 +1,450 @@
+2012/12/05 10:19:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/page&view=about
+---
+2012/12/05 10:19:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/index
+---
+2012/12/05 10:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/index
+---
+2012/12/05 10:20:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/page&view=about
+---
+2012/12/05 10:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/page&view=about
+---
+2012/12/05 10:22:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/index
+---
+2012/12/05 10:22:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/index".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/index')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/index
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/index
+---
+2012/12/05 10:22:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/aboutUs".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/aboutUs')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/aboutUs
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/index
+---
+2012/12/05 10:22:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/careers".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/careers')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/careers
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/aboutUs
+---
+2012/12/05 10:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/careers".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/careers')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/careers
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/aboutUs
+---
+2012/12/05 10:22:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/careers".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/careers')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/careers
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/aboutUs
+---
+2012/12/05 10:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/careers".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/careers')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/careers
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/aboutUs
+---
+2012/12/05 10:22:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/careers".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/careers')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/careers
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/aboutUs
+---
+2012/12/05 10:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company/careers".' in /Applications/MAMP/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('company/careers')
+#1 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiisandbox/index.php?r=company/careers
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=company/aboutUs
+---
+2012/12/05 10:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "EInnerFade".' in /Applications/MAMP/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(271): CController->missingAction('EInnerFade')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('EInnerFade')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/EInnerFade')
+#3 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/EInnerFade
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/contact
+---
+2012/12/05 10:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "EInnerFade".' in /Applications/MAMP/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(271): CController->missingAction('EInnerFade')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('EInnerFade')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/EInnerFade')
+#3 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/EInnerFade
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/page&view=about
+---
+2012/12/05 10:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "EInnerFade".' in /Applications/MAMP/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(271): CController->missingAction('EInnerFade')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('EInnerFade')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/EInnerFade')
+#3 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/EInnerFade
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/page&view=about
+---
+2012/12/06 13:23:01 [error] [exception.CException] exception 'CException' with message 'The asset "/Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/assets" to be published does not exist.' in /Applications/MAMP/framework/web/CAssetManager.php:255
+Stack trace:
+#0 /Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php(11): CAssetManager->publish('/Applications/M...')
+#1 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#3 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#4 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('pages/EInnerFad...', NULL, true)
+#5 /Applications/MAMP/framework/web/actions/CViewAction.php(141): CController->render('pages/EInnerFad...')
+#6 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Applications/MAMP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#8 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#9 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('page')
+#11 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#12 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=EInnerFade
+---
+2012/12/06 13:29:31 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "/Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php". A EInnerFade widget does not have an endWidget() call.' in /Applications/MAMP/framework/web/CBaseController.php:102
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#1 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('pages/EInnerFad...', NULL, true)
+#2 /Applications/MAMP/framework/web/actions/CViewAction.php(141): CController->render('pages/EInnerFad...')
+#3 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#4 /Applications/MAMP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#5 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#6 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#7 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('page')
+#8 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#9 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=EInnerFade
+---
+2012/12/06 14:04:42 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getPathOfAlias".' in /Applications/MAMP/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php(191): CComponent->__call('getPathOfAlias', Array)
+#1 /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php(191): CWebApplication->getPathOfAlias('ext')
+#2 /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php(103): EInnerFade->registerClientScript()
+#3 /Applications/MAMP/framework/web/CBaseController.php(148): EInnerFade->init()
+#4 /Applications/MAMP/framework/web/CBaseController.php(190): CBaseController->createWidget('ext.EInnerFade....', Array)
+#5 /Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php(420): CBaseController->beginWidget('ext.EInnerFade....', Array)
+#6 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#7 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#8 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#9 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('pages/EInnerFad...', NULL, true)
+#10 /Applications/MAMP/framework/web/actions/CViewAction.php(141): CController->render('pages/EInnerFad...')
+#11 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#12 /Applications/MAMP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#13 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#14 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#15 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('page')
+#16 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#17 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=EInnerFade
+---
+2012/12/06 15:15:23 [error] [exception.CException] exception 'CException' with message 'EInnerFade and its behaviors do not have a method or closure named "resolveNameID".' in /Applications/MAMP/framework/base/CComponent.php:266
+Stack trace:
+#0 /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php(114): CComponent->__call('resolveNameID', Array)
+#1 /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php(114): EInnerFade->resolveNameID()
+#2 /Applications/MAMP/framework/web/CBaseController.php(207): EInnerFade->run()
+#3 /Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php(422): CBaseController->endWidget()
+#4 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#5 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#7 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('pages/EInnerFad...', NULL, true)
+#8 /Applications/MAMP/framework/web/actions/CViewAction.php(141): CController->render('pages/EInnerFad...')
+#9 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#10 /Applications/MAMP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#11 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#12 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('page')
+#14 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#15 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=EInnerFade
+---
+2012/12/06 15:22:00 [error] [php] Undefined variable: cssFile (/Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php:117)
+Stack trace:
+#0 /Applications/MAMP/framework/web/CBaseController.php(190): SiteController->createWidget()
+#1 /Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php(421): SiteController->beginWidget()
+#2 /Applications/MAMP/framework/web/CBaseController.php(127): require()
+#3 /Applications/MAMP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#4 /Applications/MAMP/framework/web/CController.php(870): SiteController->renderFile()
+#5 /Applications/MAMP/framework/web/CController.php(783): SiteController->renderPartial()
+#6 /Applications/MAMP/framework/web/actions/CViewAction.php(141): SiteController->render()
+#7 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#8 /Applications/MAMP/framework/web/CController.php(309): CViewAction->runWithParams()
+#9 /Applications/MAMP/framework/web/CController.php(287): SiteController->runAction()
+#10 /Applications/MAMP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#11 /Applications/MAMP/framework/web/CWebApplication.php(283): SiteController->run()
+#12 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#13 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /Applications/MAMP/public_html/yiisandbox/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=EInnerFade
+in /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php (117)
+in /Applications/MAMP/public_html/yiisandbox/protected/extensions/EInnerFade/EInnerFade.php (83)
+in /Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php (421)
+2012/12/06 15:26:53 [error] [exception.CException] exception 'CException' with message 'Property "EInnerFade.timeOut" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWidgetFactory.php(162): CComponent->__set('timeOut', 4000)
+#1 /Applications/MAMP/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'ext.EInnerFade....', Array)
+#2 /Applications/MAMP/framework/web/CBaseController.php(190): CBaseController->createWidget('ext.EInnerFade....', Array)
+#3 /Applications/MAMP/public_html/yiisandbox/protected/views/site/pages/EInnerFade.php(420): CBaseController->beginWidget('ext.EInnerFade....', Array)
+#4 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#5 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#7 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('pages/EInnerFad...', NULL, true)
+#8 /Applications/MAMP/framework/web/actions/CViewAction.php(141): CController->render('pages/EInnerFad...')
+#9 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#10 /Applications/MAMP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#11 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#12 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#13 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('page')
+#14 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#15 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=EInnerFade
+---
+2013/02/21 16:50:33 [error] [php] Undefined variable: user (/Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/pages/recaptcha.php:25)
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(870): SiteController->renderFile()
+#1 /Applications/MAMP/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /Applications/MAMP/framework/web/actions/CViewAction.php(141): SiteController->render()
+#3 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#4 /Applications/MAMP/framework/web/CController.php(309): CViewAction->runWithParams()
+#5 /Applications/MAMP/framework/web/CController.php(287): SiteController->runAction()
+#6 /Applications/MAMP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Applications/MAMP/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/public_html/yiisandbox/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=recaptcha
+in /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/pages/recaptcha.php (25)
+in /Applications/MAMP/public_html/yiisandbox/index.php (13)
+2013/02/21 17:25:08 [error] [php] include(ReCaptchaTestModel.php): failed to open stream: No such file or directory (/Applications/MAMP/framework/YiiBase.php:423)
+Stack trace:
+#0 /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/pages/recaptcha.php(24): spl_autoload_call()
+#1 /Applications/MAMP/framework/web/CBaseController.php(127): require()
+#2 /Applications/MAMP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Applications/MAMP/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Applications/MAMP/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Applications/MAMP/framework/web/actions/CViewAction.php(141): SiteController->render()
+#6 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Applications/MAMP/framework/web/CController.php(309): CViewAction->runWithParams()
+#8 /Applications/MAMP/framework/web/CController.php(287): SiteController->runAction()
+#9 /Applications/MAMP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Applications/MAMP/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/public_html/yiisandbox/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=recaptcha
+in /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/pages/recaptcha.php (24)
+in /Applications/MAMP/public_html/yiisandbox/index.php (13)
+2013/02/21 17:44:31 [error] [exception.CException] exception 'CException' with message 'SiteController has an extra endWidget() call in its view.' in /Applications/MAMP/framework/web/CBaseController.php:211
+Stack trace:
+#0 /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/pages/recaptcha.php(77): CBaseController->endWidget()
+#1 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#3 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', NULL, true)
+#4 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('pages/recaptcha', NULL, true)
+#5 /Applications/MAMP/framework/web/actions/CViewAction.php(141): CController->render('pages/recaptcha')
+#6 /Applications/MAMP/framework/web/actions/CAction.php(75): CViewAction->run()
+#7 /Applications/MAMP/framework/web/CController.php(309): CAction->runWithParams(Array)
+#8 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#9 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('page')
+#11 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/page')
+#12 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/page&view=recaptcha
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/page&view=recaptcha
+---
+2013/02/21 20:12:56 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "recaptcha".' in /Applications/MAMP/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('recaptcha', Array, true)
+#1 /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php(133): CController->render('recaptcha', Array)
+#2 /Applications/MAMP/framework/web/actions/CInlineAction.php(50): SiteController->actionRecaptcha()
+#3 /Applications/MAMP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('recaptcha')
+#7 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/recaptcha')
+#8 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/recaptcha
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/login
+---
+2013/02/21 20:13:32 [error] [php] include(ReCaptchaTestModel.php): failed to open stream: No such file or directory (/Applications/MAMP/framework/YiiBase.php:423)
+Stack trace:
+#0 /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/recaptcha.php(17): spl_autoload_call()
+#1 /Applications/MAMP/framework/web/CBaseController.php(127): require()
+#2 /Applications/MAMP/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#3 /Applications/MAMP/framework/web/CController.php(870): SiteController->renderFile()
+#4 /Applications/MAMP/framework/web/CController.php(783): SiteController->renderPartial()
+#5 /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php(133): SiteController->render()
+#6 /Applications/MAMP/framework/web/actions/CInlineAction.php(50): SiteController->actionRecaptcha()
+#7 /Applications/MAMP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /Applications/MAMP/framework/web/CController.php(287): SiteController->runAction()
+#9 /Applications/MAMP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#10 /Applications/MAMP/framework/web/CWebApplication.php(283): SiteController->run()
+#11 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/public_html/yiisandbox/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiisandbox/index.php?r=site/recaptcha
+in /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/recaptcha.php (17)
+in /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php (133)
+in /Applications/MAMP/public_html/yiisandbox/index.php (13)
+2013/02/21 20:14:09 [error] [php] Undefined index: LoginForm (/Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php:127)
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(287): SiteController->runAction()
+#1 /Applications/MAMP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#2 /Applications/MAMP/framework/web/CWebApplication.php(283): SiteController->run()
+#3 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/public_html/yiisandbox/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiisandbox/index.php?r=site/recaptcha
+in /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php (127)
+in /Applications/MAMP/public_html/yiisandbox/index.php (13)
+2013/02/21 21:23:20 [error] [exception.CException] exception 'CException' with message 'Property "ReCaptchaForm.username" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/framework/web/helpers/CHtml.php(2158): CComponent->__get('username')
+#1 /Applications/MAMP/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(ReCaptchaForm), 'username')
+#2 /Applications/MAMP/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(ReCaptchaForm), 'username', Array)
+#3 /Applications/MAMP/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(ReCaptchaForm), 'username', Array)
+#4 /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/recaptcha.php(41): CActiveForm->textField(Object(ReCaptchaForm), 'username')
+#5 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#6 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('recaptcha', Array, true)
+#9 /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php(133): CController->render('recaptcha', Array)
+#10 /Applications/MAMP/framework/web/actions/CInlineAction.php(50): SiteController->actionRecaptcha()
+#11 /Applications/MAMP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('recaptcha')
+#15 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/recaptcha')
+#16 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/recaptcha
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/recaptcha
+---
+2013/02/21 21:25:08 [error] [exception.CException] exception 'CException' with message 'Property "ReCaptchaForm.username" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/framework/web/helpers/CHtml.php(2158): CComponent->__get('username')
+#1 /Applications/MAMP/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(ReCaptchaForm), 'username')
+#2 /Applications/MAMP/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(ReCaptchaForm), 'username', Array)
+#3 /Applications/MAMP/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(ReCaptchaForm), 'username', Array)
+#4 /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/recaptcha.php(38): CActiveForm->textField(Object(ReCaptchaForm), 'username')
+#5 /Applications/MAMP/framework/web/CBaseController.php(127): require('/Applications/M...')
+#6 /Applications/MAMP/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/framework/web/CController.php(783): CController->renderPartial('recaptcha', Array, true)
+#9 /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php(133): CController->render('recaptcha', Array)
+#10 /Applications/MAMP/framework/web/actions/CInlineAction.php(50): SiteController->actionRecaptcha()
+#11 /Applications/MAMP/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /Applications/MAMP/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /Applications/MAMP/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/MAMP/framework/web/CWebApplication.php(283): CController->run('recaptcha')
+#15 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController('site/recaptcha')
+#16 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /Applications/MAMP/public_html/yiisandbox/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/yiisandbox/index.php?r=site/recaptcha
+HTTP_REFERER=http://localhost:8888/yiisandbox/index.php?r=site/recaptcha
+---
+2013/02/21 21:25:23 [error] [php] Undefined variable: user (/Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/recaptcha.php:38)
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(870): SiteController->renderFile()
+#1 /Applications/MAMP/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php(133): SiteController->render()
+#3 /Applications/MAMP/framework/web/actions/CInlineAction.php(50): SiteController->actionRecaptcha()
+#4 /Applications/MAMP/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/framework/web/CController.php(287): SiteController->runAction()
+#6 /Applications/MAMP/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /Applications/MAMP/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /Applications/MAMP/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/public_html/yiisandbox/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiisandbox/index.php?r=site/recaptcha
+in /Applications/MAMP/public_html/yiisandbox/themes/abound/views/site/recaptcha.php (38)
+in /Applications/MAMP/public_html/yiisandbox/protected/controllers/SiteController.php (133)
+in /Applications/MAMP/public_html/yiisandbox/index.php (13)
