@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EReCaptcha class file.
  *
@@ -34,11 +35,10 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-
 /**
  * Include the reCAPTCHA PHP wrapper.
  */
-require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'reCAPTCHA'.DIRECTORY_SEPARATOR.'recaptchalib.php');
+require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'reCAPTCHA' . DIRECTORY_SEPARATOR . 'recaptchalib.php');
 
 /**
  * EReCaptcha generates a CAPTCHA using the service provided by reCAPTCHA {@link http://recaptcha.net/}.
@@ -50,145 +50,150 @@ require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'reCAPTCHA'.DIRECTORY_SEPARAT
  * @package application.extensions.recaptcha
  * @since 1.3
  */
-class EReCaptcha extends CInputWidget
-{
-   //***************************************************************************
-   // Configuration.
-   //***************************************************************************
+class EReCaptcha extends CInputWidget {
+    //***************************************************************************
+    // Configuration.
+    //***************************************************************************
 
-	/**
-	 * reCAPTCHA public key
-	 *
-	 * @var string
-	 */
-	protected $publicKey = '';
+    /**
+     * reCAPTCHA public key
+     *
+     * @var string
+     */
+    protected $publicKey = '';
 
-   /**
-    * The theme name for the widget. Valid themes are 'red', 'white', 'blackglass', 'clean', 'custom'
-    *
-    * @var string the theme name for the widget
-    */
-   protected $theme = 'red';
+    /**
+     * The theme name for the widget. Valid themes are 'red', 'white', 'blackglass', 'clean', 'custom'
+     *
+     * @var string the theme name for the widget
+     */
+    protected $theme = 'red';
 
-   /**
-    * The language for the widget. Valid languages are 'en', 'nl', 'fr', 'de', 'pt', 'ru', 'es', 'tr'
-    *
-    * @var string the language suffix
-    */
-   protected $language = 'en';
+    /**
+     * The language for the widget. Valid languages are 'en', 'nl', 'fr', 'de', 'pt', 'ru', 'es', 'tr'
+     *
+     * @var string the language suffix
+     */
+    protected $language = 'en';
 
-   /**
-    * @var string the tab index for the HTML tag
-    */
-   public $tabIndex = 0;
+    /**
+     * @var string the tab index for the HTML tag
+     */
+    public $tabIndex = 0;
 
-   /**
-    * @var string the id for the HTML containing the custom theme
-    */
-   public $customThemeWidget = '';
+    /**
+     * @var string the id for the HTML containing the custom theme
+     */
+    public $customThemeWidget = '';
 
-   /**
-    * @var boolean whether to use SSL for connections. If false, autodetection will be used.
-    */
-   public $useSsl = false;
+    /**
+     * @var boolean whether to use SSL for connections. If false, autodetection will be used.
+     */
+    public $useSsl = false;
 
-   //***************************************************************************
-   // Internal properties.
-   //***************************************************************************
+    protected $_assetsUrl;
 
-   /**
-    * Valid languages
-    *
-    * @var array
-    */
-   protected $validLanguages = array('en','nl','fr','de','pt','ru','es','tr');
+    //***************************************************************************
+    // Internal properties.
+    //***************************************************************************
 
-   /**
-    * Valid themes
-    *
-    * @var array
-    */
-   protected $validThemes = array('red','white','blackglass','clean','custom');
+    /**
+     * Valid languages
+     *
+     * @var array
+     */
+    protected $validLanguages = array('en', 'nl', 'fr', 'de', 'pt', 'ru', 'es', 'tr');
 
-   //***************************************************************************
-   // Setters and getters.
-   //***************************************************************************
+    /**
+     * Valid themes
+     *
+     * @var array
+     */
+    protected $validThemes = array('red', 'white', 'blackglass', 'clean', 'custom');
 
-   /**
-    * Sets the public key.
-    *
-    * @param string $value
-    * @throws CException if $value is not valid.
-    */
-   public function setPublicKey($value)
-   {
-      if (empty($value)||!is_string($value)) throw new CException(Yii::t('yii','EReCaptcha.publicKey must contain your reCAPTCHA public key.'));
-      $this->publicKey = $value;
-   }
+    //***************************************************************************
+    // Setters and getters.
+    //***************************************************************************
 
-   /**
-    * Returns the reCAPTCHA protected key
-    *
-    * @return string
-    */
-   public function getPublicKey()
-   {
-      return $this->publicKey;
-   }
+    /**
+     * Sets the public key.
+     *
+     * @param string $value
+     * @throws CException if $value is not valid.
+     */
+    public function setPublicKey($value) {
+        if (empty($value) || !is_string($value))
+            throw new CException(Yii::t('yii', 'EReCaptcha.publicKey must contain your reCAPTCHA public key.'));
+        $this->publicKey = $value;
+    }
 
-   /**
-    * Sets the language
-    *
-    * @param string $value the language string
-    * @return string
-    */
-	public function setLanguage($value)
-	{
-	   $suffix = empty($value) ? 'en' : (($p=strpos($value,'_'))!==false) ? strtolower(substr($value,0,$p)) : strtolower($value);
-      if (in_array($suffix, $this->validLanguages)) $this->language = $suffix;
-	}
+    /**
+     * Returns the reCAPTCHA protected key
+     *
+     * @return string
+     */
+    public function getPublicKey() {
+        return $this->publicKey;
+    }
 
-	/**
-	 * Returns the language value
-	 *
-	 * @return string
-	 */
-	public function getLanguage()
-	{
-	   return $this->language;
-	}
+    /**
+     * Sets the language
+     *
+     * @param string $value the language string
+     * @return string
+     */
+    public function setLanguage($value) {
+        $suffix = empty($value) ? 'en' : (($p = strpos($value, '_')) !== false) ? strtolower(substr($value, 0, $p)) : strtolower($value);
+        if (in_array($suffix, $this->validLanguages))
+            $this->language = $suffix;
+    }
 
-	/**
-	 * Sets the theme
-	 *
-	 * @param string $value the theme
-	 */
-	public function setTheme($value)
-	{
-	   if (in_array($value, $this->validThemes)) $this->theme = $value;
-	}
+    /**
+     * Returns the language value
+     *
+     * @return string
+     */
+    public function getLanguage() {
+        return $this->language;
+    }
 
-	/**
-	 * Returns the theme
-	 *
-	 * @return string
-	 */
-	public function getTheme()
-	{
-	   return $this->theme;
-	}
+    /**
+     * Sets the theme
+     *
+     * @param string $value the theme
+     */
+    public function setTheme($value) {
+        if (in_array($value, $this->validThemes))
+            $this->theme = $value;
+    }
 
-   //***************************************************************************
-   // Run Lola Run
-   //***************************************************************************
+    /**
+     * Returns the theme
+     *
+     * @return string
+     */
+    public function getTheme() {
+        return $this->theme;
+    }
 
-   public function init()
-   {
-      $customthemewidget = (($w = $this->customThemeWidget) != '') ? "'{$w}'" : 'null';
-      $cs = Yii::app()->getClientScript();
+    //***************************************************************************
+    // Run Lola Run
+    //***************************************************************************
 
-      if (!$cs->isScriptRegistered(get_class($this).'_options')) {
-         $script =<<<EOP
+    public function init() {
+        if (Yii::getPathOfAlias('responsiveReCaptcha.assets') === false)
+            Yii::setPathOfAlias('responsiveReCaptcha.assets', realpath(dirname(__FILE__) . '/assets'));
+
+        $customthemewidget = (($w = $this->customThemeWidget) != '') ? "'{$w}'" : 'null';
+        $cs = Yii::app()->getClientScript();
+
+        // Register responsive CSS
+        if (!$cs->isCssFileRegistered($this->getAssetsUrl() . "/recaptcha.css")) {
+            $cs->registerCssFile($this->getAssetsUrl() . "/recaptcha.css"); //, $media);
+        }
+
+        if (!$cs->isScriptRegistered(get_class($this) . '_options')) {
+            $script = <<<EOP
 var RecaptchaOptions = {
    theme : '{$this->theme}',
    custom_theme_widget : {$customthemewidget},
@@ -196,21 +201,33 @@ var RecaptchaOptions = {
    tabindex : {$this->tabIndex}
 };
 EOP;
-         $cs->registerScript(get_class($this).'_options', $script, CClientScript::POS_HEAD);
-      }
-   }
+            $cs->registerScript(get_class($this) . '_options', $script, CClientScript::POS_HEAD);
+        }
+    }
 
-	/**
-	 * Renders the widget.
-	 */
-	public function run()
-	{
-      $body = '';
-      if ($this->hasModel()) {
-         $body = CHtml::activeHiddenField($this->model, $this->attribute) . "\n";
-      }
-      echo $body . recaptcha_get_html($this->publicKey,
-                                      null,
-                                      ($this->useSsl ? true : Yii::app()->request->isSecureConnection));
-	}
+    /**
+     * Renders the widget.
+     */
+    public function run() {
+        $body = '';
+        if ($this->hasModel()) {
+            $body = CHtml::activeHiddenField($this->model, $this->attribute) . "\n";
+        }
+        echo $body . recaptcha_get_html($this->publicKey, null, ($this->useSsl ? true : Yii::app()->request->isSecureConnection));
+    }
+
+    /**
+     * Returns the URL to the published assets folder.
+     * @return string the URL
+     */
+    public function getAssetsUrl() {
+        if (isset($this->_assetsUrl))
+            return $this->_assetsUrl;
+        else {
+            $assetsPath = Yii::getPathOfAlias('responsiveReCaptcha.assets');
+            $assetsUrl = Yii::app()->assetManager->publish($assetsPath, false, -1, YII_DEBUG);
+            return $this->_assetsUrl = $assetsUrl;
+        }
+    }
+
 }
