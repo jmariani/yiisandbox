@@ -91,6 +91,11 @@ class EReCaptcha extends CInputWidget {
      */
     public $useSsl = false;
 
+    /**
+     *
+     * @var boolean wheter to use responsive theme or not.
+     */
+    public $responsive = false;
     protected $_assetsUrl;
 
     //***************************************************************************
@@ -192,17 +197,21 @@ class EReCaptcha extends CInputWidget {
             $cs->registerCssFile($this->getAssetsUrl() . "/recaptcha.css"); //, $media);
         }
 
-        if (!$cs->isScriptRegistered(get_class($this) . '_options')) {
+//        if (!$cs->isScriptRegistered(get_class($this) . '_options')) {
+            if ($this->responsive) {
+                $this->theme = 'custom';
+                $customthemewidget = 'recaptcha_widget';
+            }
             $script = <<<EOP
 var RecaptchaOptions = {
    theme : '{$this->theme}',
-   custom_theme_widget : {$customthemewidget},
+   custom_theme_widget : '{$customthemewidget}',
    lang : '{$this->language}',
    tabindex : {$this->tabIndex}
 };
 EOP;
             $cs->registerScript(get_class($this) . '_options', $script, CClientScript::POS_HEAD);
-        }
+//        }
     }
 
     /**
@@ -212,6 +221,46 @@ EOP;
         $body = '';
         if ($this->hasModel()) {
             $body = CHtml::activeHiddenField($this->model, $this->attribute) . "\n";
+        }
+        if ($this->responsive) {
+            $responsiveHtml = <<<EOP
+<div id="recaptcha_widget" style="display:none" class="recaptcha_widget">
+        <div id="recaptcha_image"></div>
+        <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect. Please try again.</div>
+
+        <div class="recaptcha_input">
+                <label class="recaptcha_only_if_image" for="recaptcha_response_field">Enter the words above:</label>
+                <label class="recaptcha_only_if_audio" for="recaptcha_response_field">Enter the numbers you hear:</label>
+
+                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field">
+        </div>
+
+        <ul class="recaptcha_options">
+                <li>
+                        <a href="javascript:Recaptcha.reload()">
+                                <i class="icon-refresh"></i>
+                                <span class="captcha_hide">Get another CAPTCHA</span>
+                        </a>
+                </li>
+                <li class="recaptcha_only_if_image">
+                        <a href="javascript:Recaptcha.switch_type('audio')">
+                                <i class="icon-volume-up"></i><span class="captcha_hide"> Get an audio CAPTCHA</span>
+                        </a>
+                </li>
+                <li class="recaptcha_only_if_audio">
+                        <a href="javascript:Recaptcha.switch_type('image')">
+                                <i class="icon-picture"></i><span class="captcha_hide"> Get an image CAPTCHA</span>
+                        </a>
+                </li>
+                <li>
+                        <a href="javascript:Recaptcha.showhelp()">
+                                <i class="icon-question-sign"></i><span class="captcha_hide"> Help</span>
+                        </a>
+                </li>
+        </ul>
+</div>
+EOP;
+            $body .= $responsiveHtml;
         }
         echo $body . recaptcha_get_html($this->publicKey, null, ($this->useSsl ? true : Yii::app()->request->isSecureConnection));
     }

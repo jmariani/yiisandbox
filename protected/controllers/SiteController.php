@@ -121,4 +121,28 @@ class SiteController extends Controller {
         $this->render('recaptcha', array('model' => $model));
     }
 
+       /**
+     * Displays the Responsive reCaptcha page
+     */
+    public function actionRrecaptcha() {
+        $model = new ReCaptchaForm();
+
+        // if it is ajax validation request
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+
+        // collect user input data
+        if (isset($_POST['ReCaptchaForm'])) {
+            $model->attributes = $_POST['ReCaptchaForm'];
+            // validate user input and redirect to the previous page if valid
+            if ($model->validate())
+                Yii::app()->user->setFlash('success', 'Well done!');
+            else
+                Yii::app()->user->setFlash('error', 'Too bad!');
+        }
+        // display the login form
+        $this->render('rrecaptcha', array('model' => $model));
+    }
 }

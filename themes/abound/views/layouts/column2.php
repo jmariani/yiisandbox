@@ -13,6 +13,7 @@
 				array('label'=>'<i class="icon icon-search"></i> About this theme <span class="label label-important pull-right">HOT</span>', 'url'=>'http://www.webapplicationthemes.com/abound-yii-framework-theme/'),
 				array('label'=>'<i class="icon icon-envelope"></i> Messages <span class="badge badge-success pull-right">12</span>', 'url'=>'#'),
 				array('label'=>'<i class="icon icon-envelope"></i> recaptcha <span class="badge badge-success pull-right">12</span>', 'url'=>array('/site/recaptcha')),
+				array('label'=>'<i class="icon icon-envelope"></i> Responsive recaptcha', 'url'=>array('/site/rrecaptcha')),
 				// Include the operations menu
 				array('label'=>'OPERATIONS','items'=>$this->menu),
 			),

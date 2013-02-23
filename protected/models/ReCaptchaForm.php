@@ -2,6 +2,7 @@
 class ReCaptchaForm extends CFormModel
 {
    public $validacion;
+   public $validacion1;
 
    public function rules()
    {
