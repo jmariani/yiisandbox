@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 <div class="page-header">
-	<h1>Responsive ReCaptcha <small>demo</small></h1>
+	<h1>Responsive ReCaptcha <small>A responsive version of EReCaptcha</small></h1>
 </div>
 <div class="row-fluid">
 
